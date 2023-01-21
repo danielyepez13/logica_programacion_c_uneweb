@@ -3,6 +3,7 @@
 */
 
 #include <stdio.h>
+#include <conio.h>
 
 int main()
 {
@@ -21,10 +22,15 @@ int main()
 
   if (cont > 2)
   {
-    printf("El numero %i no es primo\n", numero);
+    printf("El numero %i no es primo", numero);
   }
   else
   {
     printf("El numero %i es primo", numero);
   }
+
+  printf("\n Presiona una tecla para continuar");
+  getch();
+
+  return 0;
 }
